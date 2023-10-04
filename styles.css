@@ -8,10 +8,14 @@
     grid-gap: 1px;
     grid-template-rows: repeat(var(--gridRows), 1fr);
     grid-template-columns: repeat(var(--gridCols), 1fr);
+    width: 960px;
+    height: 960px;
   }
   
   .gridItem {
-    padding: 1em;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
     border: 1px solid #ddd;
     text-align: center;
   }

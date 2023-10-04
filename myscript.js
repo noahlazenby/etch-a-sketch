@@ -11,6 +11,7 @@ function applyHoverOn () {
 };
 
 function makeRows(rows, cols) {
+    container.innerHTML = '';
     container.style.setProperty('--gridRows', rows);
     container.style.setProperty('--gridCols', cols);
     for (c = 0; c < (rows * cols); c++) {
