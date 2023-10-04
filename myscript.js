@@ -22,10 +22,14 @@ function makeRows(rows, cols) {
   
   const changeButton = document.querySelector('#userInput');
   changeButton.addEventListener("click", () => {
-    let input = prompt("Enter number of squares per side");
-    makeRows(input, input);
-    grid = document.querySelectorAll('div.gridItem');
-  })
+    let input = prompt("Enter number of squares per side (0-100)");
+    if (input <= 100 ) {
+        makeRows(input, input);
+        grid = document.querySelectorAll('div.gridItem');
+    } else {
+        alert("Error: Enter a number less than 100");
+    }
+  });
  
   makeRows(16,16);
  
